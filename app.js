@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 
-// Loads env variables
+//Loads env variables from .env file
 require('dotenv').config();
 
 //Create app
@@ -34,6 +34,6 @@ app.set('views', viewsPath);
 app.use('/api', route);
 
 //listen
-app.listen(port, ()=>{
-   console.log('Server listening at port:' + port);
+app.listen(port, () => {
+    console.log('Server listening at port:' + port);
 });
